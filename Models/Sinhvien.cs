@@ -5,7 +5,7 @@ namespace VidoWebApi.Models{
         [Required]
         public int Id { get; set; }
         [Required]
-        public string sv_id { get; set; }
+        public string? sv_id { get; set; }
         public string? sv_name { get; set; }
         public string? sv_ngaysinh { get; set; }
         public string? sv_nganh { get; set; }

@@ -22,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "VidoWeb", Version = "v1"});
 });
-builder.Services.AddHttpClient("ZaloVido", httpClient =>
+builder.Services.AddHttpClient("VidoWeb", httpClient =>
 {
     httpClient.BaseAddress = new Uri("https://admintt.viendong.edu.vn");
     httpClient.DefaultRequestHeaders.Add(
@@ -49,8 +49,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapDefaultControllerRoute();
-
-app.Run();
-
 
 app.Run();

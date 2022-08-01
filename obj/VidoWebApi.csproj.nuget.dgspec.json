@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VidoWebApi\\VidoWebApi.csproj": {}
+    "D:\\VidoWebApi\\VidoWebApi.csproj": {}
   },
   "projects": {
-    "E:\\VidoWebApi\\VidoWebApi.csproj": {
+    "D:\\VidoWebApi\\VidoWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VidoWebApi\\VidoWebApi.csproj",
+        "projectUniqueName": "D:\\VidoWebApi\\VidoWebApi.csproj",
         "projectName": "VidoWebApi",
-        "projectPath": "E:\\VidoWebApi\\VidoWebApi.csproj",
-        "packagesPath": "C:\\Users\\HoangQuan\\.nuget\\packages\\",
-        "outputPath": "E:\\VidoWebApi\\obj\\",
+        "projectPath": "D:\\VidoWebApi\\VidoWebApi.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\VidoWebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\HoangQuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,6 +74,10 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "rabbitmq.client": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -101,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
