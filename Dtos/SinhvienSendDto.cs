@@ -3,6 +3,8 @@ using Newtonsoft.Json;
 namespace VidoWebApi.Dtos{
     public class SinhvienSendDto{
         [Required]
+        public int? id {get; set;}
+        [Required]
         public string? sv_id {get;set;}
         public string? sv_name { get; set; }
         public string? sv_ngaysinh { get; set; }

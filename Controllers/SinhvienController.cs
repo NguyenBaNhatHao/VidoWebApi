@@ -40,5 +40,24 @@ namespace VidoWebApi.Controllers{
             
             return Ok(messageReadDto);
         }
+        [HttpPut("{id}")]
+        public ActionResult<SinhvienReadDto> UpdateSinhvien(int id ,SinhvienSendDto sinhvienSendDto){
+            var subscription = _mapper.Map<Sinhvien>(sinhvienSendDto);
+            try
+            {
+                if(id != sinhvienSendDto.id){
+                    return BadRequest("sv_id mismatch");
+                }
+                _context.tb_sinhvien.Update(subscription);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            var messageReadDto = _mapper.Map<SinhvienReadDto>(subscription);
+            
+            return Ok(messageReadDto);
+        }
     }
 }
