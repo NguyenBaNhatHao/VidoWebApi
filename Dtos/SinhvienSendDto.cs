@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 namespace VidoWebApi.Dtos{
-    public class SinhvienCreateDto{
+    public class SinhvienSendDto{
         [Required]
         public string? sv_id {get;set;}
         public string? sv_name { get; set; }

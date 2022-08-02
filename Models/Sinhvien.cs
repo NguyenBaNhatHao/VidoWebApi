@@ -14,7 +14,6 @@ namespace VidoWebApi.Models{
         public string? sv_hinhthuc { get; set; }
         public string? sv_tinhtrang { get; set; }
         public string? sv_email { get; set; }
-        public string? img_name { get; set; }
-        public DateTime? img_time { get; set; }
+
     }
 }

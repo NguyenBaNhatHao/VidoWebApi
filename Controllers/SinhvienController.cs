@@ -24,5 +24,21 @@ namespace VidoWebApi.Controllers{
             var dataMessage = _context.tb_sinhvien.FromSqlRaw("select * from tb_sinhvien").ToList();
             return Ok(dataMessage);
         }
+        [HttpPost]
+        public ActionResult<SinhvienReadDto> CreateSinhvien(SinhvienSendDto sinhvienSendDto){
+            var subscription = _mapper.Map<Sinhvien>(sinhvienSendDto);
+            try
+            {
+                _context.tb_sinhvien.Add(subscription);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            var messageReadDto = _mapper.Map<SinhvienReadDto>(subscription);
+            
+            return Ok(messageReadDto);
+        }
     }
 }

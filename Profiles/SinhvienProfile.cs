@@ -5,7 +5,7 @@ using VidoWebApi.Models;
 namespace VidoWebApi.Profiles{
     public class SinhvienProfile : Profile{
         public SinhvienProfile(){
-            CreateMap<SinhvienCreateDto,Sinhvien>()
+            CreateMap<SinhvienSendDto,Sinhvien>()
             .ForMember(dest=>dest.sv_id,act=>act.MapFrom(src=>src.sv_id))
             .ForMember(dest=>dest.sv_ngaysinh,act=>act.MapFrom(src=>src.sv_ngaysinh))
             .ForMember(dest=>dest.sv_nganh,act=>act.MapFrom(src=>src.sv_nganh))
