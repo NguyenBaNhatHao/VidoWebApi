@@ -5,6 +5,6 @@ namespace VidoWebApi.Data{
         public VidoWebDbContext(DbContextOptions<VidoWebDbContext> opt):base(opt){
             
         }
-        public DbSet<Sinhvien>? tb_sinhvien{get;set;}
+        public DbSet<Sinhvien> tb_sinhvien{get;set;}
     }
 }

@@ -3,7 +3,7 @@ namespace VidoWebApi.Models{
     public class Sinhvien{
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int id { get; set; }
         [Required]
         public string? sv_id { get; set; }
         public string? sv_name { get; set; }

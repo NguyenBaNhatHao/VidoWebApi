@@ -2,8 +2,9 @@ using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 namespace VidoWebApi.Dtos{
     public class SinhvienSendDto{
+        [Key]
         [Required]
-        public int? id {get; set;}
+        public int id {get; set;}
         [Required]
         public string? sv_id {get;set;}
         public string? sv_name { get; set; }
